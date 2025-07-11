@@ -1,4 +1,3 @@
-// Base class
 class Person {
   constructor(name, age) {
     this._name = name;
@@ -16,22 +15,21 @@ class Person {
   }
 
   // Setter for age
-  set age(newAge) {
-    this._age = newAge;
+  set age(age) {
+    this._age = age;
   }
 }
 
-// Student class inherits from Person
 class Student extends Person {
   study() {
     console.log(`${this.name} is studying`);
   }
 }
 
-// Teacher class inherits from Person
 class Teacher extends Person {
   teach() {
     console.log(`${this.name} is teaching`);
   }
 }
+
 
